@@ -6,3 +6,4 @@ Bienvenidos al repositorio de **Virgilio**. Aquí encontrarás todos los ejercic
 - Ejercicios HTML
 - Ejercicios CSS
 - Ejercicios JS
+- Ejercicios de JQuery
