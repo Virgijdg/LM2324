@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,16 +18,61 @@
             display: flex;
             justify-content: center;
         }
-        #caja2 {
+        #main {
             width: 100%;
             height: 100%;
             color: black;
             text-align: left;
-            padding-top: 100px;
+            padding-top: 110px;
+            position: absolute;
+            z-index: -1;
+            display: flex;
         }
         .p {
             color: black;
             text-align: left;
+        }
+        #caja2 {
+            width: 30%;
+            height: 220px;
+            color: black;
+            background-color: aqua;
+            text-align: center;
+            margin-right: 10px;
+            border: 5px;
+            border-style: inset;
+            border-color: rgb(219, 219, 219);
+        }
+        #caja3 {
+            width: 30%;
+            height: 250px;
+            color: black;
+            background-color: rgb(123, 253, 134);
+            text-align: center;
+            margin-right: 10px;
+            border: 5px;
+            border-style: outset;
+            border-color: rgb(219, 219, 219);
+        }
+        #caja4 {
+            width: 30%;
+            height: 270px;
+            color: black;
+            background-color: rgb(253, 175, 123);
+            text-align: center;
+            border: 5px;
+            border-style: inset;
+            border-color: rgb(219, 219, 219);
+        }
+        #caja5 {
+            width: 30%;
+            height: 270px;
+            color: black;
+            background-color: rgb(253, 175, 123);
+            text-align: center;
+            border: 5px;
+            border-style: inset;
+            border-color: rgb(219, 219, 219);
         }
     </style>
 </head>
@@ -35,16 +80,10 @@
     <div id="caja1">
         <img id="imagen" src="supubli/banner.png" alt="">
     </div>
-    <div id="caja2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis lectus sit amet urna mattis fermentum facilisis vitae est. Curabitur eleifend, justo eget lobortis tincidunt, massa eros suscipit massa, nec volutpat ligula nunc sit amet magna. Sed facilisis laoreet urna et venenatis. Etiam rhoncus metus tincidunt enim placerat, eu imperdiet metus aliquam. Donec vitae congue velit. Vestibulum vitae volutpat ante, et tincidunt ex. Vestibulum ut arcu in arcu pharetra hendrerit in eget justo. Curabitur sed nibh cursus orci tempus pellentesque ut sed dui. Cras hendrerit arcu ante, sit amet ultricies urna sagittis id.
-
-            Praesent sodales nunc lectus, in sagittis mi aliquam sed. Quisque convallis bibendum dui, quis euismod purus aliquet volutpat. Quisque iaculis, libero dignissim imperdiet porttitor, nisi mi aliquet urna, vel lacinia neque velit ac ante. Suspendisse lobortis ex sed mauris auctor auctor. Maecenas in leo nisl. Phasellus sollicitudin arcu non sem tincidunt blandit. Etiam aliquet dolor a ex porttitor dignissim. In mollis felis lobortis sem cursus laoreet. Maecenas commodo vel enim vitae tempor. In cursus volutpat purus, ut sodales massa molestie vitae. Mauris nec sapien pellentesque, suscipit leo a, egestas metus. Nam volutpat iaculis metus quis posuere. Aenean scelerisque vitae orci sed feugiat. Donec cursus, mauris in tempus laoreet, mauris metus ullamcorper purus, in viverra justo ex vitae arcu.
-            
-            Cras suscipit pellentesque mauris, quis efficitur augue volutpat id. Mauris dolor magna, rutrum ac metus quis, interdum dictum eros. Morbi faucibus placerat metus eget sodales. Sed euismod justo et nibh scelerisque viverra. Sed nec diam feugiat felis pellentesque porta eget id nisi. Fusce ut dui justo. Pellentesque sed est sapien. Quisque quis mauris eu purus venenatis suscipit.
-            
-            Morbi ut laoreet metus. Aenean maximus urna nec risus tempor laoreet. Mauris pulvinar risus quis nisl pellentesque dictum ac ac ligula. Donec est turpis, luctus non justo a, euismod gravida erat. Integer neque sapien, pellentesque sagittis dictum in, tempus at quam. Sed justo nunc, cursus vitae facilisis eu, tincidunt in diam. Praesent tristique vehicula mauris ac faucibus.
-            
-            Ut eleifend porttitor sem eget mollis. Cras tincidunt magna fermentum ante lobortis, sit amet accumsan neque congue. Proin ac dolor pharetra orci faucibus bibendum at ac risus. Aenean eget maximus odio, et dictum erat. Phasellus ante velit, semper in nulla eget, feugiat elementum tellus. Etiam eget ligula sem. Phasellus cursus massa diam, lobortis bibendum diam hendrerit id. Morbi tincidunt sed dolor et tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam volutpat quam cursus, tincidunt odio ut, feugiat lectus. Praesent pharetra in est eu molestie. Vivamus non bibendum justo.</p>
+    <div id="main">
+        <div id="caja2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare in justo sit amet vehicula. Morbi feugiat finibus neque, sit amet sagittis nisl gravida ac. Curabitur bibendum a elit quis tempus. In fermentum, diam non viverra fermentum, lacus risus tempus lacus, non efficitur nulla diam vel dui. Duis ultricies purus id risus ullamcorper, fermentum fringilla eros suscipit. Sed ornare fringilla lacinia. Morbi sagittis mi ut felis rhoncus, posuere posuere massa accumsan. Nullam id laoreet ligula, et sagittis libero. In eros dolor, pellentesque sit amet augue at, vehicula consequat arcu.</div>
+        <div id="caja3">Integer erat diam, cursus at lorem quis, tristique fringilla ligula. Sed ac neque tempus, sagittis elit ut, imperdiet magna. Vivamus purus purus, aliquam vitae mi quis, posuere luctus justo. Sed a augue a turpis bibendum tristique. Quisque et lorem eu lacus tempus rutrum eget eu quam. Phasellus est nunc, pellentesque et lorem vitae, pharetra commodo nunc. Etiam vitae sodales ante, bibendum sagittis est. Ut nec feugiat nibh. In vehicula viverra maximus. Praesent aliquet auctor nibh, eget blandit libero mollis vitae. Nulla eros metus, vulputate vitae posuere id, lacinia nec magna. Cras dictum quis nulla a auctor. Etiam vehicula nulla tortor, malesuada vestibulum odio vulputate ut.</div>
+        <div id="caja4">Mauris sed enim auctor, eleifend libero in, fermentum dolor. Aliquam erat volutpat. Sed congue libero quis dui tincidunt fringilla. Integer ac ante vel lacus condimentum vestibulum vitae sit amet lectus. Donec eget mauris aliquet augue lacinia luctus. Duis molestie sollicitudin sollicitudin. Vivamus ut neque leo. Nulla non consectetur ligula, sed ultrices nunc. Morbi gravida vestibulum enim. Aenean non varius ante. Nunc vitae interdum ipsum. Nunc auctor erat augue, sed commodo tellus euismod vel. Curabitur tortor mi, tempor non aliquet ut, dignissim quis urna. Sed consectetur pharetra magna, ut porttitor ex semper non. Donec sodales, magna sed dictum vulputate, eros justo euismod lectus, vitae sagittis dolor turpis nec arcu.</div>
     </div>
 </body>
 </html>
