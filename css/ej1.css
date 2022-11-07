@@ -1,0 +1,16 @@
+.encabezados {
+    font-size: 200px;
+    color: blue;
+    text-align: center;
+}
+
+.parrafo {
+    margin-left: 20px;
+    color: yellow;
+    text-align: left;
+}
+
+body{
+    background: url(https://wallpaperstock.net/gradiente-fondo-verde-wallpapers_43896_2560x1600.jpg);
+    background: no-repeat;
+}
