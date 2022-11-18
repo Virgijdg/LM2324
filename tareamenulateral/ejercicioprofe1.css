@@ -2,6 +2,7 @@
 body {
     background-color:#ffe079;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: #ffffff;
     }
 .wrapper {overflow: auto;}
         
