@@ -15,12 +15,12 @@ body {
     width: auto;
 }
         
-#menulist {
+#lista {
     margin: 0;
     padding: 0;
 }
         
-.menuitem {
+.menu {
     background: #4ff3ff;
     border: 2px solid #000000;
     border-radius: 4px;
