@@ -1,0 +1,113 @@
+#titulo{
+    text-align: center;
+    background-image: url(https://play-lh.googleusercontent.com/J01oXl4FLF-YOzINE17L7dDHr4w2EwlozqwyRTMJtNioaDUycuccWY1twuZsEUV5XTw=w600-h300-pc0xffffff-pd);
+    background-repeat: no-repeat;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#paginas{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+a:link{
+    color: black;
+}
+
+a:visited{
+    color: red;
+}
+
+a:active{
+    color: black;
+}
+
+#links{
+    text-align: right;
+    width: 80%;
+}
+
+#botones{
+    width: 20%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.boton{
+    background-color: rgb(255, 202, 87);
+    padding: 14px;
+}
+@media screen and (max-width:300px){
+    #texto{
+        flex-direction: column;
+    }
+}
+#texto{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(51, 51, 51);
+}
+
+#izquierda{
+    flex: 30%;
+    color: white;
+    margin-right: 10px;
+}
+
+#derecha{
+    flex: 69%;
+    color: white;
+}
+
+
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
