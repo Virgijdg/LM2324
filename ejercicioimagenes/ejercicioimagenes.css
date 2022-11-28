@@ -23,3 +23,9 @@ body{
 img{
     width: 100%;
 }
+
+@media screen and (max-width: 300px){
+    .imagenes{
+        flex-direction: column;
+    }
+}
