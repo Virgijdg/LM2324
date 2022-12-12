@@ -19,7 +19,7 @@ body{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: 10% 40% auto 10%;
-    justify-content: stretch;
+
     width: 80%;
     height: 80vh;
     margin: 0 auto;

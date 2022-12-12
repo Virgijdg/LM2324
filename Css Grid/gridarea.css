@@ -1,0 +1,48 @@
+body{
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container{
+    background-color: lightgrey;
+    border: 4px dashed black;
+    text-align: center;
+    width: 80%;
+    height: 84vh;
+    display: grid;
+    grid-template-areas: "cabecera cabecera" "menu menu" "contenido banners" "piedepagina piedepagina";
+    grid-template-rows: 10% 20% auto 10%;
+    margin: 0 auto;
+    
+}
+
+.cabecera{
+    background-color: aqua;
+    grid-area: cabecera;
+    line-height: 8vh;
+}
+
+.caja{
+    border: 4px solid black;
+    background-color: lightgray;
+    text-align: center;
+}
+
+menu{
+    background-color: brown;
+    grid-area: menu;
+    line-height: 15vh;
+}
+
+.contenido{
+    background-color: darkkhaki;
+    grid-area: contenido;
+    line-height: 54vh;
+}
+
+.banners{
+    background-color: darkcyan;
+    grid-area: banners;
+    line-height: 54vh;
+}
