@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulos</title> <script src="ej1circulos.js"></script>
+    <style>
+        #caja{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+
+        }
+        #rojo{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        #verde{
+            background-color: green;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        #azul{
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="caja">
+        <div id="rojo"></div>
+        <div id="verde"></div>
+        <div id="azul"></div>
+        <button type="button" style="width: 100px;" onclick="ocultar('rojo')">Ocultar</button>
+        <button type="button" style="width: 100px;" onclick="ocultar('verde')">Ocultar</button> 
+        <button type="button" style="width: 100px;" onclick="ocultar('azul')">Ocultar</button>  
+        <button type="button" style="width: 100px;" onclick="mostrar('rojo')">Mostrar</button>
+        <button type="button" style="width: 100px;" onclick="mostrar('verde')">Mostrar</button>
+        <button type="button" style="width: 100px;" onclick="mostrar('azul')">Mostrar</button>
+
+    </div>
+</body>
+</html>
