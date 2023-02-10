@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso humano</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Calculadora humana</h1>
+    <input type="text" id="altura">
+    <input type="text" id="peso">
+    <button onclick="calculo"></button>
+    <script>
+        function calculo(){
+            var alt;
+            var pes;
+            var alt = document.getElementById("altura").value;
+            var pes = document.getElementById("peso").value;
+            if (document.getElementById("altura").value == '' || document.getElementById("peso").value == '')
+                alert("No has puesto ningún número");
+            else{
+                metros = ("alt * 100");
+                alturaal2 = ("metros * metros");
+                indice = ("peso / alturaal2");
+                alert("El índice es de"+ indice);
+            }
+        }
+    </script>
+</body>
+</html>
