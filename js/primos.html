@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números primos</title>
+</head>
+<body>
+    <h1>Calculo de números pares</h1>
+    <input type="text" id="number" placeholder="Escribe un número">
+    <button onclick="calculo()">Cálculo</button>
+    <p id="resultado"></p>
+    <p id="divisores"></p>
+    <script>
+        function calculo(){
+            var num = document.getElementById("number").value;
+            var i = 2;
+            primo = true;
+            do{
+                if (parseInt(num)%i == 0){
+                    primo = false;
+                }
+                i++;
+            } while(i<num)
+            if (primo == true){
+                document.getElementById("resultado").innerHTML = "El número seleccionado es primo"
+            }
+            else{
+                document.getElementById("resultado").innerHTML = "El número seleccionado no es primo";
+            }
+            
+        }
+    </script>
+</body>
+</html>
