@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peso humano</title>
     <style>
-
+        button{
+            width: 100px;
+            height: 30px;
+        }
+        input{
+            width: 300px;
+            height: 60px;
+        }
     </style>
 </head>
 <body>
     <h1>Calculadora humana</h1>
-    <input type="text" id="altura">
-    <input type="text" id="peso">
-    <button onclick="calculo"></button>
+    <input type="text" id="altura" placeholder="Altura en cm">
+    <input type="text" id="peso" placeholder="Peso en kg">
+    <button type="button" onclick="calculo()">Calcular</button>
     <script>
         function calculo(){
             var alt;
             var pes;
             var alt = document.getElementById("altura").value;
             var pes = document.getElementById("peso").value;
-            if (document.getElementById("altura").value == '' || document.getElementById("peso").value == '')
+            if (document.getElementById("alt").value == '' || document.getElementById("pes").value == '')
                 alert("No has puesto ningún número");
             else{
                 metros = ("alt * 100");

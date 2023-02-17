@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número par</title>
+</head>
+<body>
+    <h1>Calculo de números pares</h1>
+    <input type="text" id="number" placeholder="Escribe un número">
+    <button onclick="calculo()">Cálculo</button>
+    <p id="resultado"></p>
+    <script>
+        function calculo(){
+            var num = document.getElementById("number").value;
+            if (parseInt(num)%2 == 0)
+                document.getElementById("resultado").innerHTML = "Es par";
+            else
+                document.getElementById("resultado").innerHTML = "Es impar";
+        }
+    </script>
+</body>
+</html>
