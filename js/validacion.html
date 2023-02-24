@@ -12,27 +12,78 @@
 <body>
     <h1>Validación</h1>
     <p>Nombre</p>
-    <p id="nombre"><input id="nom" type="text"></p>
+    <p><input id="nom" type="text"></p>
+    <p id="nombre" style="color: red;"></p>
     <p>Apellidos</p>
-    <p id="apellido"><input id="ape" type="text"></p>
+    <p><input id="ape" type="text"></p>
+    <p id="apellido" style="color:red"></p>
     <p>Correo electrónico</p>
-    <p id="correo"><input id="cor" type="text"></p>
+    <p><input id="cor" type="text"></p>
+    <p id="correo" style="color:red"></p>
     <p>Dirección</p>
-    <p id="direccion"><input id="dir" type="text"></p>
+    <p><input id="dir" type="text"></p>
+    <p id="direccion"></p>
     <p>Ciudad</p>
-    <p id="ciudad"><input id="ciu" type="text"></p>
+    <p><input id="ciu" type="text"></p>
+    <p id="ciudad"></p>
     <p>Teléfono</p>
-    <p id="telefono"><input id="tel" type="text"></p>
+    <p><input id="tel" type="text"></p>
+    <p id="telefono" style="color:red"></p>
     <p>DNI</p>
-    <p id="dni"><input id="d" type="text"></p>
+    <p><input id="dn" type="text"></p>
+    <p id="dni" style="color:red"></p>
     <p>PIN</p>
-    <p id="pin"><input id="p" type="text"></p>
+    <p><input id="pi" type="text"></p>
+    <p id="pin" style="color:red"></p>
     <p>Repetir PIN</p>
-    <p id="repetir"><input id="rep" type="text"></p>
+    <p><input id="rep" type="text"></p>
+    <p id="repetir" style="color:red"></p>
     <p><button onclick="validar()">Validar credenciales</button></p>
     <script>
         function validar(){
-            
+            /*Nombre*/
+            if(document.getElementById("nom").value == ''){
+                document.getElementById("nombre").innerHTML = "Este campo es obligatorio"
+            }
+            else{
+                document.getElementById("nombre").style.display = "none"
+            }
+            /*Apellidos*/
+            if(document.getElementById("ape").value == ''){
+                document.getElementById("apellido").innerHTML = "Este campo es obligario"
+            }
+            else{
+                document.getElementById("apellido").style.display = "none"
+            }
+            /*Correo*/
+            if(document.getElementById("cor").value == ''){
+                document.getElementById("correo").innerHTML = "Este campo es obligatorio"
+            }
+            else{
+                document.getElementById("correo").style.display = "none"
+            }
+            /*DNI*/
+            if(document.getElementById("dn").value == ''){
+                document.getElementById("dni").innerHTML = "Este campo es obligatorio"
+            }
+            else{
+                document.getElementById("dni").style.display = "none"
+            }
+            /*PIN*/
+            if(document.getElementById("pi").value == ''){
+                document.getElementById("pin").innerHTML = "Este campo es obligatorio"
+            }
+            else{
+                document.getElementById("pin").style.display = "none"
+            }
+            /*Repetir PIN*/
+            if(document.getElementById("rep").value == ''){
+                document.getElementById("repetir").innerHTML = "Este campo es obligatorio"
+            }
+            else{
+                document.getElementById("repetir").style.display = "none"
+            }
+
         }
     </script>
 </body>
