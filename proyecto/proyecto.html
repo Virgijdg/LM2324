@@ -4,9 +4,195 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>PC Merch</title><script src="proyecto.js"></script>
+    <style>
+        #productos{
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: auto auto auto;
+        }
+        #encabezado{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            margin: 100px;
+        }
+        .apartados{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px;
+        }
+        p,li,h1,h3,button{
+            color: white;
+        }
+    </style>
 </head>
-<body>
-    
+<body style="background-image: url(fondo.jfif)">
+    <div id="encabezado">
+        <h1>PC MERCH</h1>
+        <h3>Bienvenido a nuestra página web de venta de productos informáticos</h3>
+    </div>
+    <div id="productos">
+        <div class="apartados">
+            <img width="300px" src="pantalla.jpg" alt="Imagen de pantalla">
+            <p>Características:</p>
+            <ul>
+                <li>
+                    Pantalla de 27 pulgadas.
+                </li>
+                <li>
+                    Máxima velocidad de actualización: 165 Hz
+                </li>
+                <li>
+                    AMD FreeSync: No
+                </li>
+                <li>
+                    Calidad de imagen Full-HD.
+                </li>
+                <li>
+                    Precio: 210€. <i style="color:red">-24%</i>
+                </li>
+            </ul>
+            <div>
+                <button onclick="restar()" style="background-color: black; width: 100px;"><h2>-</h2></button>
+                <button onclick="sumar()" style="background-color: black; width: 100px;"><h2>+</h2></button>
+            </div>
+        </div>
+        <div class="apartados">
+            <img width="300px" src="raton.jpg" alt="">
+            <p>Características:</p>
+            <ul>
+                <li>
+                    Sensor: Óptico.
+                </li>
+                <li>
+                    Número de teclas: 6 botones.
+                </li>
+                <li>
+                    Longitud cable mallado: 1,8m.
+                </li>
+                <li>
+                    Resolución ajustable: 1000 - 4000 DPI.
+                </li>
+                <li>
+                    Precio: 6,99€. <i style="color:red">-20%</i>
+                </li>
+            </ul>
+            <div>
+                <button onclick="restar()" style="background-color: black; width: 100px;"><h2>-</h2></button>
+                <button onclick="sumar()" style="background-color: black; width: 100px;"><h2>+</h2></button>
+            </div>
+        </div>  
+        <div class="apartados">
+            <img width="300px" src="teclado.jpg" alt="">
+            <p>Características:</p>
+            <ul>
+                <li>
+                    Formato del teclado: 75%.
+                </li>
+                <li>
+                    Interruptor del teclado: Interruptor mecánico.
+                </li>
+                <li>
+                    Versión de Bluetooth: 5.0
+                </li>
+                <li>
+                    Longitud de cable: 1,5 m
+                </li>
+                <li>
+                    Precio: 52,90€.
+                </li>
+            </ul>
+            <div>
+                <button onclick="restar()" style="background-color: black; width: 100px;"><h2>-</h2></button>
+                <button onclick="sumar()" style="background-color: black; width: 100px;"><h2>+</h2></button>
+            </div>
+        </div>
+        <div class="apartados">
+            <img width="300px" src="cascos.webp" alt="">
+            <p>Tiene las siguientes características:</p>
+            <ul>
+                <li>
+                    Bluetooth: No.
+                </li>
+                <li>
+                    Audifonos: Supraaural.
+                </li>
+                <li>
+                    Frecuencia de banda: 2.4/5 GHz
+                </li>
+                <li>
+                    Sensibilidad de micrófono: 54 dB
+                </li>
+                <li>
+                    Precio: 106,99€. <i style="color:red">-10%</i>
+                </li>
+            </ul>
+            <div>
+                <button onclick="restar()" style="background-color: black; width: 100px;"><h2>-</h2></button>
+                <button onclick="sumar()" style="background-color: black; width: 100px;"><h2>+</h2></button>
+            </div>
+        </div>
+        <div class="apartados">
+            <img width="300px" src="ordenador.webp" alt="">
+            <p>Tiene las siguientes características:</p>
+            <ul>
+                <li>
+                    Procesador: Intel Core i7-12700K 3.6 GHz.
+                </li>
+                <li>
+                    Placa Base: ASUS PRIME B660-PLUS D4.
+                </li>
+                <li>
+                    Memoria: DDR4 3200MHz PC4-25600 32GB 2x16GB .
+                </li>
+                <li>
+                    Gráfica: GeForce RTX 3070 LHR 8GB GDDR6.
+                </li>
+                <li>
+                    Disco duro: Samsung 980 SSD 1TB PCIe 3.0 NVMe M.2.
+                </li>
+                <li>
+                    Fuente de alimentación: Forgeon Bolt PSU 750W 80+ Gold Full Modular.
+                </li>
+                <li>
+                    Precio: 1924,95€. <i style="color:red">Llevatelo desde 52,6€/mes.</i>
+                </li>
+            </ul>
+            <div>
+                <button onclick="restar()" style="background-color: black; width: 100px;"><h2>-</h2></button>
+                <button onclick="sumar()" style="background-color: black; width: 100px;"><h2>+</h2></button>
+            </div>
+        </div>
+        <div class="apartados">
+            <img width="300px" src="stream deck.jpg" alt="">
+            <p>Tiene las siguientes características:</p>
+            <ul>
+                <li>
+                    15 teclas LCD: toca para cambiar de escena, lanzar contenido audiovisual, ajustar el audio y mucho más.
+                </li>
+                <li>
+                    Tamaño de la pantalla 75.
+                </li>
+                <li>
+                    Fabricante Corsair
+                </li>
+                <li>
+                    Precio: 192,99€.
+                </li>
+            </ul>
+            <div>
+                <button onclick="restar()" style="background-color: black; width: 100px;"><h2>-</h2></button>
+                <button onclick="sumar()" style="background-color: black; width: 100px;"><h2>+</h2></button>
+            </div>
+        </div>
+        <div>
+        <i style="color:white">Contador = </i><input style="background-color: black; color: white;" width="300px" type="text" id="contador">
+        </div>
+    </div>
+    <div class="apartados">
+        <i style="color:white">Precio total = </i><input style="background-color: black; color: white;" width="300px" type="text" id="total">
+    </div>
 </body>
 </html>
