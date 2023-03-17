@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Examen</title><script src="formulario.js"></script>
+    <style>
+        form{
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario examen</h1>
+    <form action="">
+        Nombre:
+        <input id="nom" type="text"> <i id="nombre" style="color: red;"></i>
+    </form>
+    <form action="">
+        Apellidos: 
+        <input id="ape" type="text"> <i id="apellido" style="color:red"></i>
+    </form>
+    <form action="">
+        Correo electrónico: 
+        <input id="cor" type="email"> <i id="correo" style="color:red"></i> <i id="correovalido" style="color: red"></i>
+    </form>
+    <form action="">
+        PIN: 
+        <input id="pi" type="number" maxlength="8"> <i id="pin" style="color:red"></i>
+    </form>
+    <form action="">
+        Repetir PIN:
+        <input id="rep" type="number" maxlength="8"> <i id="repetir" style="color:red"></i>
+    </form>
+    <form action="">
+        <input type="checkbox" id="condiciones"/> Acepto las condiciones de uso. <i id="condicion" style="color: red"></i>
+    </form>
+    <p><button onclick="validar()">Validar credenciales</button></p>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina cifras</title>
+    <style>
+        button{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Adivina el número en tiempo record!</h1>
+    <p>He pensado un número de 3 cifras...</p>
+    <button id="boton" onclick="empezar()">Comenzar</button>
+    <input id="escribirNumero" type="number" maxlength="3" style="display: none;">
+    <p id="numeroAzar"></p>
+    <button id="comprobacion" style="display: none;" onclick="comprobar()">Comprobar</button>
+    <p id="fallos"></p>
+    <p id="tiempo"></p>
+    <script>
+        var min = 100;
+        var max = 999;
+        var random =Math.floor(Math.random() * (+max - +min)) + +min;
+        function empezar(){
+            document.getElementById("boton").style.display = "none";
+            document.getElementById("escribirNumero").style.display = "block";
+            document.getElementById("comprobacion").style.display = "block";
+            document.getElementById("numeroAzar").innerHTML = (random);
+            var startTime = function(){
+                seconds++;
+                time = setTimeout("startTime()",1000);
+            }
+        }
+        function comprobar(){
+            var numero = document.getElementById("escribirNumero").value;
+            if(numero == random){
+                document.getElementById("fallos").innerHTML = "El número es correcto";
+                document.getElementById("tiempo").innerHTML = "Has tardado" + time;
+            }
+            else{
+                document.getElementById("fallos").innerHTML = "El número no es correcto"
+            }
+        }
+    </script>
+</body>
+</html>
