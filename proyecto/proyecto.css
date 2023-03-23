@@ -1,0 +1,63 @@
+.white{
+    color: white;
+}
+
+.botones{
+    background-color: black;
+    width: 100px;
+}
+
+img{
+    width: 300px;
+}
+
+.rebajas{
+    color: red;
+}
+
+input{
+    background-color: black;
+    color: white;
+    width: 200px;
+}
+
+body{
+    background-image: url(fondo.jfif);
+}
+
+#productos{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto auto;
+}
+
+#encabezado{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 100px;
+}
+
+.apartados{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+p,li,h1,h3,button{
+    color: white;
+}
+
+#precioTotal{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#formularioPago{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px;
+}

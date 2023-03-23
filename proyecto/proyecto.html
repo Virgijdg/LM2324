@@ -4,38 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC Merch</title><script src="proyecto.js"></script>
-    <style>
-        #productos{
-            display: grid;
-            grid-template-columns: 33% 33% 33%;
-            grid-template-rows: auto auto auto;
-        }
-        #encabezado{
-            display: flex;
-            flex-direction:column;
-            align-items: center;
-            margin: 100px;
-        }
-        .apartados{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            margin: 20px;
-        }
-        p,li,h1,h3,button{
-            color: white;
-        }
-    </style>
+    <title>PC Merch</title><script src="proyecto.js"></script><link rel="stylesheet" href="proyecto.css">
 </head>
-<body style="background-image: url(fondo.jfif)">
+<body>
     <div id="encabezado">
         <h1>PC MERCH</h1>
         <h3>Bienvenido a nuestra página web de venta de productos informáticos</h3>
     </div>
     <div id="productos">
-        <div class="apartados">
-            <img width="300px" src="pantalla.jpg" alt="Imagen de pantalla">
+        <div class="apartados" id="pantalla">
+            <img src="pantalla.jpg" alt="Imagen de pantalla">
             <p>Características:</p>
             <ul>
                 <li>
@@ -51,16 +29,19 @@
                     Calidad de imagen Full-HD.
                 </li>
                 <li>
-                    Precio: 210€. <i style="color:red">-24%</i>
+                    Precio: 210€. <i class="rebajas">-24%</i>
                 </li>
             </ul>
             <div>
-                <button onclick="restar()" style="background-color: black; width: 100px;"><h2>-</h2></button>
-                <button onclick="sumar()" style="background-color: black; width: 100px;"><h2>+</h2></button>
+                <button onclick="quitar('pantalla')" class="botones"><h2>-</h2></button>
+                <button onclick="anadir('pantalla')" class="botones"><h2>+</h2></button>
+            </div>
+            <div>
+                <i class="white">Cantidad = </i><input type="number" id="contador">
             </div>
         </div>
-        <div class="apartados">
-            <img width="300px" src="raton.jpg" alt="">
+        <div class="apartados" id="raton">
+            <img src="raton.jpg" alt="">
             <p>Características:</p>
             <ul>
                 <li>
@@ -76,16 +57,19 @@
                     Resolución ajustable: 1000 - 4000 DPI.
                 </li>
                 <li>
-                    Precio: 6,99€. <i style="color:red">-20%</i>
+                    Precio: 6,99€. <i class="rebajas">-20%</i>
                 </li>
             </ul>
             <div>
-                <button onclick="restar()" style="background-color: black; width: 100px;"><h2>-</h2></button>
-                <button onclick="sumar()" style="background-color: black; width: 100px;"><h2>+</h2></button>
+                <button onclick="quitar('raton')" class="botones"><h2>-</h2></button>
+                <button onclick="anadir('raton')" class="botones"><h2>+</h2></button>
+            </div>
+            <div>
+                <i class="white">Cantidad = </i><input type="number" id="contador">
             </div>
         </div>  
-        <div class="apartados">
-            <img width="300px" src="teclado.jpg" alt="">
+        <div class="apartados" id="teclado">
+            <img src="teclado.jpg" alt="">
             <p>Características:</p>
             <ul>
                 <li>
@@ -105,12 +89,15 @@
                 </li>
             </ul>
             <div>
-                <button onclick="restar()" style="background-color: black; width: 100px;"><h2>-</h2></button>
-                <button onclick="sumar()" style="background-color: black; width: 100px;"><h2>+</h2></button>
+                <button onclick="quitar('teclado')" style="background-color: black; width: 100px;"><h2>-</h2></button>
+                <button onclick="anadir('teclado')" style="background-color: black; width: 100px;"><h2>+</h2></button>
+            </div>
+            <div>
+                <i class="white">Cantidad = </i><input type="number" id="contador">
             </div>
         </div>
-        <div class="apartados">
-            <img width="300px" src="cascos.webp" alt="">
+        <div class="apartados" id="cascos">
+            <img src="cascos.webp" alt="">
             <p>Tiene las siguientes características:</p>
             <ul>
                 <li>
@@ -126,16 +113,19 @@
                     Sensibilidad de micrófono: 54 dB
                 </li>
                 <li>
-                    Precio: 106,99€. <i style="color:red">-10%</i>
+                    Precio: 106,99€. <i class="rebajas">-10%</i>
                 </li>
             </ul>
             <div>
-                <button onclick="restar()" style="background-color: black; width: 100px;"><h2>-</h2></button>
-                <button onclick="sumar()" style="background-color: black; width: 100px;"><h2>+</h2></button>
+                <button onclick="quitar('cascos')" class="botones"><h2>-</h2></button>
+                <button onclick="anadir('cascos')" class="botones"><h2>+</h2></button>
+            </div>
+            <div>
+                <i class="white">Cantidad = </i><input type="number" id="contador">
             </div>
         </div>
-        <div class="apartados">
-            <img width="300px" src="ordenador.webp" alt="">
+        <div class="apartados" id="ordenador">
+            <img src="ordenador.webp" alt="">
             <p>Tiene las siguientes características:</p>
             <ul>
                 <li>
@@ -157,16 +147,19 @@
                     Fuente de alimentación: Forgeon Bolt PSU 750W 80+ Gold Full Modular.
                 </li>
                 <li>
-                    Precio: 1924,95€. <i style="color:red">Llevatelo desde 52,6€/mes.</i>
+                    Precio: 1924,95€. <i class="rebajas">Llevatelo desde 52,6€/mes.</i>
                 </li>
             </ul>
             <div>
-                <button onclick="restar()" style="background-color: black; width: 100px;"><h2>-</h2></button>
-                <button onclick="sumar()" style="background-color: black; width: 100px;"><h2>+</h2></button>
+                <button onclick="quitar('ordenador')" class="botones"><h2>-</h2></button>
+                <button onclick="anadir('ordenador')" class="botones"><h2>+</h2></button>
+            </div>
+            <div>
+                <i class="white">Cantidad = </i><input type="number" id="contador">
             </div>
         </div>
-        <div class="apartados">
-            <img width="300px" src="stream deck.jpg" alt="">
+        <div class="apartados" id="streamDeck">
+            <img src="stream deck.jpg" alt="">
             <p>Tiene las siguientes características:</p>
             <ul>
                 <li>
@@ -183,16 +176,18 @@
                 </li>
             </ul>
             <div>
-                <button onclick="restar()" style="background-color: black; width: 100px;"><h2>-</h2></button>
-                <button onclick="sumar()" style="background-color: black; width: 100px;"><h2>+</h2></button>
+                <button onclick="quitar('streamdeck')" class="botones"><h2>-</h2></button>
+                <button onclick="anadir('streamdeck')" class="botones"><h2>+</h2></button>
+            </div>
+            <div>
+                <i class="white">Cantidad = </i><input type="number" id="contador">
             </div>
         </div>
-        <div>
-        <i style="color:white">Contador = </i><input style="background-color: black; color: white;" width="300px" type="text" id="contador">
-        </div>
     </div>
-    <div class="apartados">
-        <i style="color:white">Precio total = </i><input style="background-color: black; color: white;" width="300px" type="text" id="total">
+    <div id="precioTotal">
+        <p></p>
+        <i class="white">Precio total = </i><p id="total">0</p>
+        <button onclick="pagar()" class="botones">Pagar</button>
     </div>
 </body>
 </html>
