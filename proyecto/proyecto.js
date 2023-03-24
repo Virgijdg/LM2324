@@ -53,21 +53,21 @@ function anadir(producto){
     let objeto = catalogo[producto];
     objeto['cantidad'] += 1;
     catalogo[producto] = objeto;
-    document.getElementById("id"+ producto).value = objeto['uds'];
+    document.getElementById("id"+ producto).value = objeto['cantidad'];
     localStorage.setItem("catalogo", JSON.stringify(catalogo));
 }
 
 function refrescar(){
     let listaCatalogo = document.getElementById("catalogo");
     let total = 0;
-    listaCatalogo.innerHTML = 0;
+    listaCatalogo.innerHTML = "0";
     for (var i=0; i<carro.length; i++){
         let producto = carro[i];
         if (producto[cantidad]>0){
             total = total + producto['cantidad']*producto['precio'];
         }
     }
-    
+
 }
 
 
