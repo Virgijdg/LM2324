@@ -29,15 +29,15 @@
                     Calidad de imagen Full-HD.
                 </li>
                 <li>
-                    Precio: 210€. <i class="rebajas">-24%</i>
+                    Precio: 210€. <i class="destacados">-24%</i>
                 </li>
             </ul>
             <div>
-                <button onclick="quitar('pantalla')" class="botones"><h2>-</h2></button>
-                <button onclick="anadir('pantalla')" class="botones"><h2>+</h2></button>
+                <button onclick="quitar(0)" class="botones"><h2>-</h2></button>
+                <button onclick="anadir(0)" class="botones"><h2>+</h2></button>
             </div>
             <div>
-                <i class="white">Cantidad = </i><input type="number" id="contador">
+                <input type="number" value="0" id="id0" disabled>
             </div>
         </div>
         <div class="apartados" id="raton">
@@ -57,15 +57,15 @@
                     Resolución ajustable: 1000 - 4000 DPI.
                 </li>
                 <li>
-                    Precio: 6,99€. <i class="rebajas">-20%</i>
+                    Precio: 6,99€. <i class="destacados">-20%</i>
                 </li>
             </ul>
             <div>
-                <button onclick="quitar('raton')" class="botones"><h2>-</h2></button>
-                <button onclick="anadir('raton')" class="botones"><h2>+</h2></button>
+                <button onclick="quitar(1)" class="botones"><h2>-</h2></button>
+                <button onclick="anadir(1)" class="botones"><h2>+</h2></button>
             </div>
             <div>
-                <i class="white">Cantidad = </i><input type="number" id="contador">
+                <input type="number" value="0" id="id1" disabled>
             </div>
         </div>  
         <div class="apartados" id="teclado">
@@ -89,11 +89,11 @@
                 </li>
             </ul>
             <div>
-                <button onclick="quitar('teclado')" style="background-color: black; width: 100px;"><h2>-</h2></button>
-                <button onclick="anadir('teclado')" style="background-color: black; width: 100px;"><h2>+</h2></button>
+                <button onclick="quitar(2)" style="background-color: black; width: 100px;"><h2>-</h2></button>
+                <button onclick="anadir(2)" style="background-color: black; width: 100px;"><h2>+</h2></button>
             </div>
             <div>
-                <i class="white">Cantidad = </i><input type="number" id="contador">
+                <input type="number" value="0" id="id2" disabled>
             </div>
         </div>
         <div class="apartados" id="cascos">
@@ -113,15 +113,15 @@
                     Sensibilidad de micrófono: 54 dB
                 </li>
                 <li>
-                    Precio: 106,99€. <i class="rebajas">-10%</i>
+                    Precio: 106,99€. <i class="destacados">-10%</i>
                 </li>
             </ul>
             <div>
-                <button onclick="quitar('cascos')" class="botones"><h2>-</h2></button>
-                <button onclick="anadir('cascos')" class="botones"><h2>+</h2></button>
+                <button onclick="quitar(3)" class="botones"><h2>-</h2></button>
+                <button onclick="anadir(3)" class="botones"><h2>+</h2></button>
             </div>
             <div>
-                <i class="white">Cantidad = </i><input type="number" id="contador">
+                <input type="number" value="0" id="id3" disabled>
             </div>
         </div>
         <div class="apartados" id="ordenador">
@@ -147,15 +147,15 @@
                     Fuente de alimentación: Forgeon Bolt PSU 750W 80+ Gold Full Modular.
                 </li>
                 <li>
-                    Precio: 1924,95€. <i class="rebajas">Llevatelo desde 52,6€/mes.</i>
+                    Precio: 1924,95€. <i class="destacados">Llevatelo desde 52,6€/mes.</i>
                 </li>
             </ul>
             <div>
-                <button onclick="quitar('ordenador')" class="botones"><h2>-</h2></button>
-                <button onclick="anadir('ordenador')" class="botones"><h2>+</h2></button>
+                <button onclick="quitar(4)" class="botones"><h2>-</h2></button>
+                <button onclick="anadir(4)" class="botones"><h2>+</h2></button>
             </div>
             <div>
-                <i class="white">Cantidad = </i><input type="number" id="contador">
+                <input type="number" value="0" id="id4" disabled>
             </div>
         </div>
         <div class="apartados" id="streamDeck">
@@ -176,18 +176,21 @@
                 </li>
             </ul>
             <div>
-                <button onclick="quitar('streamdeck')" class="botones"><h2>-</h2></button>
-                <button onclick="anadir('streamdeck')" class="botones"><h2>+</h2></button>
+                <button onclick="quitar(5)" class="botones"><h2>-</h2></button>
+                <button onclick="anadir(5)" class="botones"><h2>+</h2></button>
             </div>
             <div>
-                <i class="white">Cantidad = </i><input type="number" id="contador">
+                <input type="number" value="0" id="id5" disabled>
             </div>
         </div>
     </div>
     <div id="precioTotal">
         <p></p>
-        <i class="white">Precio total = </i><p id="total">0</p>
+        <i class="white">Precio total = </i><p id="aPagar">0</p>
         <button onclick="pagar()" class="botones">Pagar</button>
     </div>
+    <script>
+        iniciar();
+    </script>
 </body>
 </html>

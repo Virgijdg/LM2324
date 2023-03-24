@@ -1,3 +1,26 @@
+/*Variables predeterminadas de HTML*/
+
+body{
+    background-image: url(fondo.jfif);
+}
+
+img{
+    width: 300px;
+}
+
+input{
+    background-color: black;
+    color: white;
+    width: 200px;
+    text-align: center;
+}
+
+p,li,h1,h3,button{
+    color: white;
+}
+
+/*Variables externas*/
+
 .white{
     color: white;
 }
@@ -7,22 +30,8 @@
     width: 100px;
 }
 
-img{
-    width: 300px;
-}
-
-.rebajas{
+.destacados{
     color: red;
-}
-
-input{
-    background-color: black;
-    color: white;
-    width: 200px;
-}
-
-body{
-    background-image: url(fondo.jfif);
 }
 
 #productos{
@@ -43,9 +52,6 @@ body{
     align-items: center;
     flex-direction: column;
     margin: 20px;
-}
-
-p,li,h1,h3,button{
     color: white;
 }
 
@@ -60,4 +66,6 @@ p,li,h1,h3,button{
     align-items: center;
     flex-direction: column;
     margin: 40px;
+    color: white;
 }
+

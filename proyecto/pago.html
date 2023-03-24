@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC Merch pago</title><link rel="stylesheet" href="proyecto.css">
+    <title>PC Merch pago</title><link rel="stylesheet" href="proyecto.css"><script src="proyecto.js"></script>
 </head>
 <body>
-    <div id="formularioPago"></div>
+    <div id="formularioPago">
+        <h1>Formulario de pago</h1>
+        <form action="">
+            Nombre:
+            <input id="nom" class="apartados" type="text" required> <i id="nombre" class="destacados"></i>
+        </form>
+        <form action="">
+            Apellidos: 
+            <input id="ape" class="apartados" type="text" required> <i id="apellido" class="destacados"></i>
+        </form>
+        <form action="">
+            Correo electrónico: 
+            <input id="cor" class="apartados" type="email"> <i id="correo" class="destacados"></i> <i id="correovalido" style="color: red"></i>
+        </form>
+        <form action="">
+            Teléfono:
+            <input id="phone" class="apartados" pattern="\d{8}" required> <i id="ph" class="destacados"></i>
+        </form>
+        <form action="">
+            Tarjeta de crédito
+            <input id="credit" class="apartados" type="number" maxlength="8" required> <i id="cr" class="destacados"></i>
+        </form>
+        <form action="">
+            <input type="checkbox" class="apartados" id="condiciones"/> Acepto las condiciones de uso. <i id="condicion" class="destacados"></i>
+        </form>
+        <p><button onclick="validar()">Validar credenciales</button></p>
+    </div>
 </body>
 </html>
