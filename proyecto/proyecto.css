@@ -15,8 +15,9 @@ input{
     text-align: center;
 }
 
-p,li,h1,h3,button{
+p,li,h1,h3,button,form{
     color: white;
+    margin: 5px;
 }
 
 /*Variables externas*/
@@ -62,10 +63,28 @@ p,li,h1,h3,button{
 }
 
 #formularioPago{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
     margin: 40px;
     color: white;
 }
 
+.letrasGrandes{
+    font-size: large;
+    color: white;
+}
+
+#botonPago{
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    font-size: large;
+}
+
+#tarjetaDeCredito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
