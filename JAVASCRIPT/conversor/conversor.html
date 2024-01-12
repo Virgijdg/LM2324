@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor monetario</title>
+    <script src="conversor.js"></script>
+</head>
+<body onchange="convertir(divisa)">
+    <h1>Conversor monetario</h1>
+    <input id="cantidad" type="text" placeholder="Introduzca cantidad">
+    <button onclick="convertir('euro')">Convertir a euro</button>
+    <button onclick="convertir('dolares')">Convertir a dolares</button>
+    <p id="resultado"></p>
+</body>
+</html>

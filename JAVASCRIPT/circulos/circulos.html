@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulos</title>
+    <script src="circulos.js"></script>
+    <style>
+        #rojo{
+            height: 90px;
+            line-height: 90px;
+            text-align: center;
+            border: 2px dashed;
+            background-color: red;
+        }
+        #azul{
+            height: 90px;
+            line-height: 90px;
+            text-align: center;
+            border: 2px dashed;
+            background-color: blue;
+        }
+        #verde{
+            height: 90px;
+            line-height: 90px;
+            text-align: center;
+            border: 2px dashed;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="rojo"></div>
+        <div id="azul"></div>
+        <div id="verde"></div>
+    </div>
+    <div class="botones">
+        <button onclick="ocultar_mostrar('rojo')">Ocultar y mostrar rojo</button>
+        <button onclick="ocultar_mostrar('azul')">Ocultar y mostrar azul</button>
+        <button onclick="ocultar_mostrar('verde')">Ocultar y mostrar verde</button>
+    </div>
+</body>
+</html>
